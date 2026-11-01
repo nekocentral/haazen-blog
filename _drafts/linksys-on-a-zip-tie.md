@@ -37,7 +37,7 @@ These days the shop's network looks like this:
 
 The KPN modem sits in the middle, and everything else hangs off it on its own network: the Linksys for guests, a router from the company that manages the card machine and register, and the NVR for the cameras (more on those in part 2).
 
-NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So, if I remember right, I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests, and I tested it: from the guest Wi-Fi I couldn't reach anything on the LAN. Client isolation is on too, so guests can't see each other either. On an open network, that one matters.
+NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests. I tested it back then, and again while writing this post: from the guest Wi-Fi, the KPN router and the camera NVR just time out. Client isolation is on too, so guests can't see each other either. On an open network, that one matters.
 
 ## Six years later
 
