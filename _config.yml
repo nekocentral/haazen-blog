@@ -1,0 +1,51 @@
+title: Haazen Blog
+description: Notes, builds and write-ups by Marcel Haazen.
+author: Marcel Haazen
+url: "https://blog.haazen.xyz"
+baseurl: ""
+lang: en
+
+# Same URL scheme as the old Neko Blog System: /2018/01/post-name/
+permalink: /:year/:month/:title/
+
+# Front page shows 6 posts per page; page 2+ lives at /page/2/
+paginate: 6
+paginate_path: "/page/:num/"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Main-site navigation (shown in the header)
+nav:
+  - title: Home
+    url: https://haazen.xyz
+  - title: About
+    url: https://haazen.xyz/about
+  - title: Blog
+    url: /
+  - title: Contact
+    url: https://haazen.xyz/contact
+
+# Footer links: edit freely
+social:
+  - title: GitHub
+    url: https://github.com/nekocentral
+  - title: Twitter
+    url: https://twitter.com/nekocentral
+  - title: LinkedIn
+    url: https://linkedin.com/in/mhaazen
+  - title: Keybase
+    url: https://keybase.io/nekocentral
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
