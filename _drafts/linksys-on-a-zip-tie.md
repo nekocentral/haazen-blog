@@ -15,7 +15,7 @@ About half a year later their KPN modem died, taking the debit card machine and 
 
 ## The setup
 
-The router is a Linksys TODO-model from the Cisco era. I started out on Shibby's Tomato build, and I think it's on FreshTomato now. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. It's an open network, no password. Not that many people use it, I think, but it's there.
+The router is a Linksys E3200 from the Cisco era: a 500 MHz Broadcom chip and 16 MB of flash. It runs AdvancedTomato, a nicer-looking interface on top of Shibby's Tomato build. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. It's an open network, no password. Not that many people use it, I think, but it's there.
 
 TODO: rate limit. If there is one, what's it set to?
 
@@ -37,7 +37,7 @@ These days the shop's network looks like this:
 
 The KPN modem sits in the middle, and everything else hangs off it on its own network: the Linksys for guests, a router from the company that manages the card machine and register, and the NVR for the cameras (more on those in part 2).
 
-NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests. I tested it back then, and again while writing this post: from the guest Wi-Fi, the KPN router and the camera NVR just time out. Client isolation is on too, so guests can't see each other either. On an open network, that one matters.
+NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests. I tested it back then, and again while writing this post: from the guest Wi-Fi, I can't reach the KPN router or the camera NVR. Client isolation is on too, so guests can't see each other either. On an open network, that one matters.
 
 ## Six years later
 
