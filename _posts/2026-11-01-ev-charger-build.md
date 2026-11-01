@@ -3,7 +3,7 @@ title: Building my own EV charger from a €50 EVBox
 date: 2026-11-01 02:32:03 +0000   # time keeps it above 'Hello again' (same day)
 excerpt: "It started with the granny charger that came with my old Leaf. It nearly burned down my garage."
 tags: [ev, electrical, diy]
-image: /images/ev-charger/evbox-installed.webp
+image: https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/evbox-installed.webp
 image_position: center 72%   # which part of the photo shows on the blog list
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
@@ -14,15 +14,15 @@ It started with the granny charger that came with my old Leaf. It nearly burned 
 
 I walked into the garage one day and the FAULT light on the charger was on. Confused as hell, I went to check and unplugged everything. This is what I found:
 
-![The garage wall socket after the granny charger](/images/ev-charger/socket.webp)
+![The garage wall socket after the granny charger](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/socket.webp)
 
 The setup was simple: the charger went into a cheap plug-in energy meter, so I could see what each session used, and the meter went into an old socket in the garage. The charger pulls 10 A, for hours at a time. On paper that's fine: the meter is rated for 13 A and the socket for 16 A. In practice, hours of 10 A through a cheap plug and a tired socket turns into a lot of heat in a very small spot.
 
-![The plug-in meter's plug, melted where it met the socket](/images/ev-charger/meter.webp)
+![The plug-in meter's plug, melted where it met the socket](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/meter.webp)
 
 Opening the socket up afterwards showed how close it actually got. The contact had cooked, and the insulation on the wire next to it had melted.
 
-![Inside the wall socket: charred contact and melted wire insulation](/images/ev-charger/socket-inside.webp)
+![Inside the wall socket: charred contact and melted wire insulation](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/socket-inside.webp)
 
 Lucky that's all it did. So yeah: time to upgrade to something proper.
 
@@ -30,7 +30,7 @@ Lucky that's all it did. So yeah: time to upgrade to something proper.
 
 A new wallbox cost several hundred euros at the time. Instead, I found a second-hand EVBox BusinessLine on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why the cover is bright ING orange. (Still need to paint that thing.)
 
-![The EVBox on the garage wall, ING orange and all](/images/ev-charger/evbox-installed.webp)
+![The EVBox on the garage wall, ING orange and all](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/evbox-installed.webp)
 
 ## What was inside
 
@@ -42,7 +42,7 @@ Opening it up, there wasn't much to it:
 - a contactor
 - a 12 V power supply
 
-![The EVBox opened up, with the original black-box controller on top](/images/ev-charger/evbox-opened.webp)
+![The EVBox opened up, with the original black-box controller on top](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/evbox-opened.webp)
 
 The basic hardware was fine. The part that made it an EVBox was the controller, so that's what had to go.
 
@@ -50,17 +50,17 @@ The basic hardware was fine. The part that made it an EVBox was the controller, 
 
 The big black box got replaced with a SmartEVSE v3 from Stegen.
 
-![First power-up with the SmartEVSE in place of the old controller](/images/ev-charger/smartevse-first-boot.webp)
+![First power-up with the SmartEVSE in place of the old controller](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/smartevse-first-boot.webp)
 
 The original LED ring is wired to the SmartEVSE through its RGB wires, so the full ring still works. And that thing is BRIGHT. My whole garage lights up when it's charging. I got lucky there too, because those EVBox LED rings are known to fail.
 
 Somewhere around June to August 2025 I also swapped the old meter for an Eastron SDM630 Modbus V3 and connected it to the SmartEVSE. Now I can see exactly how much each charging session used.
 
-![After the first 2025 upgrade: SmartEVSE up top, the Eastron meter in the middle](/images/ev-charger/eastron-upgrade.webp)
+![After the first 2025 upgrade: SmartEVSE up top, the Eastron meter in the middle](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/eastron-upgrade.webp)
 
 Later on I went back in and rewired the whole thing in 4 mm² cable. (In the photo below, the old 12 V power supply was still in there, powering a Raspberry Pi. I wanted to try ISO 15118 to read the car's state of charge, but I've parked that idea for now and taken the Pi out.)
 
-![After the second upgrade: everything rewired in 4 mm² cable](/images/ev-charger/rewired.webp)
+![After the second upgrade: everything rewired in 4 mm² cable](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/rewired.webp)
 
 ## RFID and guest charging
 
@@ -78,7 +78,7 @@ I fitted it during the rewire, and my god, routing the three phases and the neut
 
 Upside: I didn't even have to mount it. The cables hold it in place, and it really isn't going anywhere.
 
-![The RCM14-03 sensor, held in place by nothing but the cables running through it](/images/ev-charger/rcm-sensor.webp)
+![The RCM14-03 sensor, held in place by nothing but the cables running through it](https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/rcm-sensor.webp)
 
 Recently someone from Exexis was over, and while we were chatting I asked him to have a look at it. He was positive about it, no complaints.
 
