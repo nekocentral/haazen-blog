@@ -5,7 +5,7 @@ image: /images/ev-charger/socket-inside.webp
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
 
-It started with a granny charger. The one that came with my old Leaf that nearly burned down my garage.
+It started with the granny charger that came with my old Leaf. It nearly burned down my garage.
 
 I walked into the garage one day and the FAULT light on the charger was on. Confused as hell, I went to check and unplugged everything. This is what I found:
 
@@ -23,7 +23,7 @@ Lucky that's all it did. So yeah: time to upgrade to something proper.
 
 ## A €50 EVBox
 
-A new wallbox cost several hundred euros at the time. Instead, I found a second-hand EVBox BusinessLine on Marktplaats for €50, back at the end of January 2023.
+A new wallbox cost several hundred euros at the time. Instead, I found a second-hand EVBox BusinessLine on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why the cover is bright ING orange. (Still need to paint that thing.)
 
 ![The EVBox on the garage wall, ING orange and all](/images/ev-charger/evbox-installed.webp)
 
