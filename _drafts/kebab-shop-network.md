@@ -40,7 +40,7 @@ The Omada controller first ran as software on an HPE EC200a, a little server I l
 
 That's actually why there's a counter switch at all. The EC200a needed ports for its iLO, for Proxmox, and for everything running on it, so it got a €10 TP-Link switch from Action. That did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
-That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
+The EC200a itself lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
 ## The worst part
 
