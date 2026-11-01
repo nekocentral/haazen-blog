@@ -20,6 +20,20 @@ Every network run ends up above the fuse box, in its own separate area. And I st
 
 This time I kept it simple: one network, straight off the Ziggo router, with TP-Link Omada access points for the Wi-Fi. And this time with client isolation turned on, unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/).
 
-TODO: Omada details (how many APs, which switch, controller: OC200, software or cloud?) and whether customers get Wi-Fi too.
+The gear:
+
+| Where | Device |
+|---|---|
+| Main switch | TP-Link Omada SG2016P |
+| Kitchen switch | TP-Link Omada SG2016P |
+| Counter switch | TP-Link Omada SG2008P |
+| Center access point | TP-Link Omada EAP653 |
+| Kitchen access point | TP-Link Omada EAP225 |
+
+It didn't start out like that. At first there was one access point, until it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through. So the kitchen got its own.
+
+And the counter switch was originally a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
+
+TODO: what runs the Omada controller (OC200, software, or cloud?), and whether customers get Wi-Fi too.
 
 ## TODO: the worst part
