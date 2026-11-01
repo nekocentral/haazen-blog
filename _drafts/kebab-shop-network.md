@@ -18,9 +18,13 @@ Every network run ends up above the fuse box, in its own separate area. And I st
 
 ## The network
 
-This time I kept it simple: one network, straight off the Ziggo router, with TP-Link Omada access points for the Wi-Fi. And this time with client isolation turned on, unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/).
+I kept it simple: one network, straight off the Ziggo router, with TP-Link Omada switches and access points.
 
-The gear:
+Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/), I set it up properly this time: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
+
+The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup, which pushes a lot of video traffic around, so they got their own VLAN where it can't get in anyone's way. More on that in part 5.
+
+## The gear
 
 | Where | Device |
 |---|---|
@@ -32,15 +36,11 @@ The gear:
 
 It didn't start out like that. Version one was just the two 16-port switches and a single access point in the center. Then it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through, so the kitchen got its own.
 
-And the counter switch was originally a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
+The counter switch started out as a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
-Originally, the Omada controller ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It also ran Agent DVR for the cameras and Home Assistant for the smart lighting, but those get their own parts later in this series.
+The Omada controller first ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It also ran Agent DVR for the cameras and Home Assistant for the smart lighting, but those get their own parts later in this series.
 
 That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
-
-Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set it up properly: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
-
-The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup, which pushes a lot of video traffic around, so they got their own VLAN where it can't get in anyone's way. More on that in part 5.
 
 ## The worst part
 
