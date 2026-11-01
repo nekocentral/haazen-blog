@@ -36,9 +36,9 @@ The one exception to the flat network: the TVs. They run on an HDMI-over-IP setu
 
 It didn't start out like that. Version one was just the two 16-port switches and a single access point in the center. Then it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through, so the kitchen got its own.
 
-The counter switch started out as a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
+The Omada controller first ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It ran Proxmox, with Agent DVR for the cameras and Home Assistant for the smart lighting next to the controller. Those two get their own parts later in this series.
 
-The Omada controller first ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It also ran Agent DVR for the cameras and Home Assistant for the smart lighting, but those get their own parts later in this series.
+That's actually why there's a counter switch at all. The EC200a needed ports for its iLO, for Proxmox, and for everything running on it, so it got a €10 TP-Link switch from Action. That did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
 That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
