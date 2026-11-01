@@ -32,7 +32,9 @@ I kept it simple: one network, straight off the Ziggo router, with TP-Link Omada
 
 About that Ziggo router. They used to be with Glasnet, the same small ISP I have at home. I could literally call them with "Hey, it's Marcel, calling for the kebab shop" and that was all they needed. Then someone talked the owner into switching to Ziggo. I told him not to. He did it anyway, and yes, he regrets it. He listens. Mostly.
 
-Customers get Wi-Fi too. Under Glasnet that was a properly separate network, because their DrayTek router could do isolated networks. Ziggo's router can't, so when I moved the controller to the cloud recently, that setup went. These days customers are on their own SSID, but on the same flat network. The card machines don't touch it at all: they all run on 4G. And unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/), I set it up properly this time: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
+Customers get Wi-Fi too. Under Glasnet that was a properly separate network, because their DrayTek router could do isolated networks. Ziggo's router can't, so when I moved the controller to the cloud recently, that setup went. These days customers are on their own SSID, but on the same flat network.
+
+The card machines don't touch it at all: they all run on 4G. And unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/), I set it up properly this time: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
 
 The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup that blasts uncontrolled multicast everywhere, and it did not play nice with the rest of the network. So it got its own VLAN. It even refused to work until I disabled IGMP snooping on that VLAN, which means its multicast just floods every port in it. Fine, as long as it stays in its own little box. More on that in part 5.
 
