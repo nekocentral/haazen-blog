@@ -15,7 +15,7 @@ About half a year later their KPN modem died, taking the debit card machine and 
 
 ## The setup
 
-The router is a Linksys E3200 from the Cisco era: a 500 MHz Broadcom chip and 16 MB of flash. It runs AdvancedTomato, a nicer-looking interface on top of Shibby's Tomato build. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. It's an open network, no password. Not that many people use it, I think, but it's there.
+The router is a Linksys E3200 from the Cisco era: a 500 MHz Broadcom chip and 16 MB of flash. It runs AdvancedTomato, a nicer-looking interface on top of Shibby's Tomato build. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. TODO: check. The schedule may be gone; look under Access Restriction. It's an open network, no password. Not that many people use it, I think, but it's there.
 
 TODO: rate limit. If there is one, what's it set to?
 
@@ -45,4 +45,4 @@ It's had no firmware updates since it went up. When I logged in for this post, i
 
 TODO: what you find when you log in again (if the password still works).
 
-And it has never gone down. Not once. That bitch won't die. The owner knows it's mine, and the plan is simple: it stays until it dies. At this rate, that'll be when I retire.
+It reboots itself every night at 5 a.m. Other than that, it has never gone down. Not once. That bitch won't die. The owner knows it's mine, and the plan is simple: it stays until it dies. At this rate, that'll be when I retire.
