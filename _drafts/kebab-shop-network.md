@@ -38,7 +38,7 @@ It didn't start out like that. Version one was just the two 16-port switches and
 
 The Omada controller first ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It ran Proxmox, with Agent DVR for the cameras and Home Assistant for the smart lighting next to the controller. Those two get their own parts later in this series.
 
-That's actually why there's a counter switch at all. The EC200a needed ports for its iLO, for Proxmox, and for everything running on it, so it got a €10 TP-Link switch from Action. That did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
+That's actually why there's a counter switch at all. The EC200a needed ports for its iLO, for Proxmox, and for everything running on it, so it got a €10 TP-Link switch from Action. That did its job, right up until the registers needed PoE. Now it's an Omada SG2008P like the rest, and it outlived the server it was bought for: these days it runs a TV, the NVR, and the new POS systems that went in last year (part 3).
 
 The EC200a itself lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
