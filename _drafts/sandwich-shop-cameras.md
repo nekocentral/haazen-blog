@@ -30,5 +30,3 @@ Remote viewing goes through Dahua's DMSS app. It connects through Dahua's own cl
 ## Keeping footage (not too long)
 
 In the Netherlands, the Autoriteit Persoonsgegevens says camera footage should normally be kept for no more than four weeks, unless something happened. The NVR is set to delete anything older than 28 days, and there's a camera sticker at the entrance so everyone knows they're being filmed. If there's ever an incident, that clip gets exported and kept separately.
-
-TODO: confirm the 28-day setting is changed before publishing.
