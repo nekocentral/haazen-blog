@@ -1,11 +1,14 @@
 ---
 title: I told him not to buy Lidl cameras
 date: 2026-11-01 14:18:00 +0000
+excerpt: "The shop had a couple of break-ins. First their cash register got stolen, so I lent them one of mine. Then the fuckers stole that one too."
 series: Sandwich shop
 tags: [local-shops, cctv, networking]
 image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/dahua-cameras.webp
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
+
+> **Note:** the camera install was all me, done earlier this year before I started using Claude. Claude helped me write this post, and while we were at it, pointed out the NVR was keeping footage too long. That's fixed now.
 
 The shop had a couple of break-ins. First their cash register got stolen, so I lent them one of mine. Then the fuckers stole that one too.
 
