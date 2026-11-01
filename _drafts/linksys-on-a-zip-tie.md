@@ -43,6 +43,4 @@ NAT on its own only blocks one direction, though: guests could still reach out t
 
 It's had no firmware updates since it went up. When I logged in for this post, it greeted me with an "Update Available!" banner for AdvancedTomato 3.5-140. That update is four years old. So no, there's nothing newer for it. Six years without updates isn't exactly best practice, which is one more reason the guests are walled off from everything else.
 
-TODO: what you find when you log in again (if the password still works).
-
 It reboots itself every night at 5 a.m., while the Wi-Fi is off anyway, so nobody ever notices. Other than that, it has never gone down. Not once. That bitch won't die. The owner knows it's mine, and the plan is simple: it stays until it dies. At this rate, that'll be when I retire.
