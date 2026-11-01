@@ -17,7 +17,7 @@ main_alt: false
 	{% assign img = post.image | default: site.default_image %}
 	<section>
 		<a href="{{ post.url | relative_url }}" class="image">
-			<img src="{{ img | relative_url }}" alt="" />
+			<img src="{{ img | relative_url }}" alt=""{% if post.image_position %} style="object-position: {{ post.image_position }}"{% endif %} />
 		</a>
 		<div class="content">
 			<div class="inner">

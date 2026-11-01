@@ -1,7 +1,8 @@
 ---
 title: Building my own EV charger from a €50 EVBox
 tags: [ev, electrical, diy]
-image: /images/ev-charger/socket-inside.webp
+image: /images/ev-charger/evbox-installed.webp
+image_position: center 72%   # which part of the photo shows on the blog list
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
 

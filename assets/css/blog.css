@@ -11,6 +11,8 @@
 /* Blog list uses Forty spotlights (same as haazen.xyz/projects) */
 .spotlights .post-meta { margin: 0 0 1em 0; }
 .spotlights h3 a { border-bottom: 0; }
+/* Forty sizes titles to max-content, so long ones overflow on phones */
+header.major { width: fit-content; max-width: 100%; }
 /* Image fills its half without stretching the row, whatever its shape */
 .spotlights > section > .image { position: relative; overflow: hidden; min-height: 15em; }
 .spotlights > section > .image img {
