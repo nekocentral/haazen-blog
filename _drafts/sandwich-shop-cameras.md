@@ -11,7 +11,7 @@ So when the owner wanted cameras, I told him: don't be a cheap ass and get camer
 
 ## Round one: Lidl
 
-They kept dropping off the Wi-Fi. And when they were connected, the app often just wouldn't connect to them. Cameras that only sometimes record aren't much of a camera system. One of them is actually still hanging by the window. A monument to cheap-assery.
+They kept dropping off the Wi-Fi. And when they were connected, the app often just wouldn't connect to them. Cameras that only sometimes record aren't much of a camera system. One of them is actually still hanging by the window. Still powered, too. A monument to cheap-assery.
 
 ## Round two: Dahua
 
