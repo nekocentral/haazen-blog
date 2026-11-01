@@ -47,8 +47,12 @@ That's actually why there's a counter switch at all. The EC200a needed ports for
 
 The EC200a itself lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
+![The Dahua NVR, on the shelf where the EC200a used to live, on top of the audio gear (that's part 4)](https://res.cloudinary.com/haazen/image/upload/Kebab%20shop/nvr-shelf.webp)
+
 ## The worst part
 
 Replacing that €10 switch. Its uplink is a cable coming out of the wall that's only just long enough to reach. So guess what I also didn't have to mount? The new switch is held in place by its cable.
+
+![The counter switch, standing upright, held in place by nothing but its cables](https://res.cloudinary.com/haazen/image/upload/Kebab%20shop/counter-switch.webp)
 
 Again. See also: [the RCM sensor in my EV charger](/2026/11/ev-charger-build/) and [the router on a zip tie](/2026/11/linksys-on-a-zip-tie/). At this point it's less a coincidence and more a mounting strategy.
