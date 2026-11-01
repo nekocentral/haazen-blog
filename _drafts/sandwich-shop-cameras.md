@@ -6,7 +6,7 @@ image: TODO-cloudinary-url
 
 Same sandwich shop as [the router on a zip tie](/2026/11/linksys-on-a-zip-tie/). TODO: fix this link's date once that post is published.
 
-The shop had a couple of break-ins. First their cash register got stolen, so I lent them one of mine. Then that one got stolen too.
+The shop had a couple of break-ins. First their cash register got stolen, so I lent them one of mine. Then the fuckers stole that one too.
 
 So when the owner wanted cameras, I told him: don't be a cheap ass and get cameras from Lidl. Did he listen? No.
 
