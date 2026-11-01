@@ -14,7 +14,7 @@ About half a year later their KPN modem died, taking the debit card machine and 
 
 ## The setup
 
-The router is a Linksys TODO-model from the Cisco era. I started out on Shibby's Tomato build, and I think it's on FreshTomato now. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. Not that many people use it, I think, but it's there.
+The router is a Linksys TODO-model from the Cisco era. I started out on Shibby's Tomato build, and I think it's on FreshTomato now. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. It's an open network, no password. Not that many people use it, I think, but it's there.
 
 TODO: rate limit. If there is one, what's it set to?
 
@@ -36,7 +36,7 @@ These days the shop's network looks like this:
 
 The KPN modem sits in the middle, and everything else hangs off it on its own network: the Linksys for guests, a router from the company that manages the card machine and register, and the NVR for [the cameras](/TODO-cameras-post-link/).
 
-NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So, if I remember right, I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests, and I tested it: from the guest Wi-Fi I couldn't reach anything on the LAN. Client isolation is on too, so guests can't see each other either.
+NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So, if I remember right, I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests, and I tested it: from the guest Wi-Fi I couldn't reach anything on the LAN. Client isolation is on too, so guests can't see each other either. On an open network, that one matters.
 
 ## Six years later
 
