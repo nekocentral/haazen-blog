@@ -30,7 +30,7 @@ The gear:
 | Center access point | TP-Link Omada EAP653 |
 | Kitchen access point | TP-Link Omada EAP225 |
 
-It didn't start out like that. The first version was the two 16-port switches and a single access point. At first there was just the one access point in the center, until it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through. So the kitchen got its own.
+It didn't start out like that. Version one was just the two 16-port switches and a single access point in the center. Then it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through, so the kitchen got its own.
 
 And the counter switch was originally a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
