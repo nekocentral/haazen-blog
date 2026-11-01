@@ -23,9 +23,9 @@ Lucky that's all it did. So yeah: time to upgrade to something proper.
 
 ## A €50 EVBox
 
-Instead of buying a new wallbox, I found a second-hand EVBox on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why it's bright ING orange. (Still need to paint that thing.)
+Instead of buying a new wallbox, I found a second-hand EVBox on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why the cover is bright ING orange. (Still need to paint that thing.)
 
-<!-- TODO: photo of the EVBox -->
+![The EVBox on the garage wall, ING orange and all](/images/ev-charger/evbox-installed.webp)
 
 ## What was inside
 
