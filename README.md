@@ -26,12 +26,18 @@ bundle exec jekyll serve --drafts
 
 Then open http://localhost:4000.
 
+Add `image: /images/whatever.jpg` to a post's front matter to show a header image.
+
+## Credits
+
+Design: [Forty](https://html5up.net/forty) by HTML5 UP, CC BY 3.0 (see `LICENSE.txt`).
+
 ## Where things are
 
 | Path | What |
 |---|---|
 | `_config.yml` | Site title, header nav links, footer social links, posts per page |
-| `_layouts/` | Page templates (`default`, `post`) |
-| `_includes/` | Header and footer |
-| `assets/css/main.css` | All styling (light + dark mode) |
+| `_layouts/` | Page templates (`default` = Forty header/menu/footer, `post`) |
+| `assets/css/main.css`, `assets/js/` | Forty by HTML5 UP, copied unchanged from Haazen_website |
+| `assets/css/blog.css` | Blog-only style additions |
 | `CNAME` | Custom domain `blog.haazen.xyz` |

@@ -1,16 +1,24 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>{% if page.tags.size > 0 %} · {{ page.tags | join: ', ' }}{% endif %}</p>
-  </header>
-  <div class="content">
-    {{ content }}
-  </div>
-  <nav class="post-nav">
-    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
-    {% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>{% endif %}
-  </nav>
-</article>
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>{{ page.title }}</h1>
+		</header>
+		<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>{% if page.tags.size > 0 %} &middot; {{ page.tags | join: ', ' }}{% endif %}</p>
+		{% if page.image %}<span class="image main"><img src="{{ page.image | relative_url }}" alt="" /></span>{% endif %}
+		<div class="post-content">
+			{{ content }}
+		</div>
+	</div>
+</section>
+<section>
+	<div class="inner">
+		<ul class="actions post-nav">
+			{% if page.previous %}<li><a href="{{ page.previous.url | relative_url }}" class="button">&larr; {{ page.previous.title }}</a></li>{% endif %}
+			<li><a href="{{ '/' | relative_url }}" class="button primary">All posts</a></li>
+			{% if page.next %}<li><a href="{{ page.next.url | relative_url }}" class="button">{{ page.next.title }} &rarr;</a></li>{% endif %}
+		</ul>
+	</div>
+</section>

@@ -2,23 +2,33 @@
 layout: default
 title: Blog
 ---
-<h1 class="page-title">Blog</h1>
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Blog</h1>
+		</header>
 
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time></p>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt | strip_html | truncatewords: 36 }}</p>
-    <a class="more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
-  </li>
-  {% endfor %}
-</ul>
+		<div class="post-list">
+			{% for post in paginator.posts %}
+			<article>
+				<p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>{% if post.tags.size > 0 %} &middot; {{ post.tags | join: ', ' }}{% endif %}</p>
+				<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+				<p>{{ post.excerpt | strip_html | truncatewords: 36 }}</p>
+				<ul class="actions">
+					<li><a href="{{ post.url | relative_url }}" class="button small">Read more</a></li>
+				</ul>
+			</article>
+			{% endfor %}
+		</div>
 
-{% if paginator.total_pages > 1 %}
-<nav class="pagination">
-  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>{% else %}<span></span>{% endif %}
-  <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>{% else %}<span></span>{% endif %}
-</nav>
-{% endif %}
+		{% if paginator.total_pages > 1 %}
+		<ul class="pagination">
+			<li>{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}" class="button">Newer</a>{% else %}<span class="button disabled">Newer</span>{% endif %}</li>
+			{% for n in (1..paginator.total_pages) %}
+			<li>{% if n == paginator.page %}<span class="page active">{{ n }}</span>{% elsif n == 1 %}<a href="{{ '/' | relative_url }}" class="page">{{ n }}</a>{% else %}<a href="{{ site.paginate_path | replace: ':num', n | relative_url }}" class="page">{{ n }}</a>{% endif %}</li>
+			{% endfor %}
+			<li>{% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}" class="button">Older</a>{% else %}<span class="button disabled">Older</span>{% endif %}</li>
+		</ul>
+		{% endif %}
+	</div>
+</section>

@@ -1,9 +1,0 @@
-<footer class="site-footer">
-  <div class="wrap">
-    <nav>
-      {% for item in site.social %}<a href="{{ item.url }}" rel="me">{{ item.title }}</a>{% endfor %}
-      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-    </nav>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
-  </div>
-</footer>

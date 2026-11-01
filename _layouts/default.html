@@ -1,17 +1,80 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="{{ site.lang | default: 'en' }}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
-  {% feed_meta %}
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-<body>
-  {% include header.html %}
-  <main class="wrap">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% seo %}
+		{% feed_meta %}
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		<link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}" />
+		<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+		<meta name="theme-color" content="{{ site.theme_color }}">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/flavicon/apple-touch-icon.png' | relative_url }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/flavicon/favicon-32x32.png' | relative_url }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/flavicon/favicon-16x16.png' | relative_url }}">
+		<link rel="manifest" href="{{ '/images/flavicon/manifest.json' | relative_url }}">
+		<link rel="mask-icon" href="{{ '/images/flavicon/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+		<link rel="shortcut icon" href="{{ '/images/flavicon/favicon.ico' | relative_url }}">
+		<meta name="msapplication-config" content="{{ '/images/flavicon/browserconfig.xml' | relative_url }}">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ '/' | relative_url }}" class="logo"><img src="https://res.cloudinary.com/haazen/image/upload/e_negate/logo-white.png" alt="Haazen"></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							{% for item in site.nav %}
+							<li><a href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						{{ content }}
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								{% for item in site.social %}
+								<li><a href="{{ item.url }}" class="icon brands alt {{ item.icon }}" rel="me"><span class="label">{{ item.title }}</span></a></li>
+								{% endfor %}
+								<li><a href="{{ '/feed.xml' | relative_url }}" class="icon solid alt fa-rss"><span class="label">RSS</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2018 - {{ site.time | date: '%Y' }} Marcel Haazen</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/jquery.scrollex.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+	</body>
 </html>

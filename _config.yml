@@ -22,30 +22,39 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Main-site navigation (shown in the header)
+# Slide-out menu, same as haazen.xyz
 nav:
   - title: Home
-    url: https://haazen.xyz
+    url: https://haazen.xyz/
   - title: About
     url: https://haazen.xyz/about
+  - title: Certificates
+    url: https://haazen.xyz/certs
+  - title: Projects
+    url: https://haazen.xyz/projects
   - title: Blog
     url: /
   - title: Contact
     url: https://haazen.xyz/contact
 
-# Footer links: edit freely
+# Footer icons (Font Awesome brand icon names)
 social:
-  - title: GitHub
-    url: https://github.com/nekocentral
   - title: Twitter
-    url: https://twitter.com/nekocentral
+    icon: fa-twitter
+    url: https://x.com/nekocentral
+  - title: GitHub
+    icon: fa-github
+    url: https://github.com/nekocentral
   - title: LinkedIn
-    url: https://linkedin.com/in/mhaazen
-  - title: Keybase
-    url: https://keybase.io/nekocentral
+    icon: fa-linkedin-in
+    url: https://www.linkedin.com/in/mhaazen
+
+# Forty's banner/theme colour
+theme_color: "#242943"
 
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
   - vendor
+  - LICENSE.txt
