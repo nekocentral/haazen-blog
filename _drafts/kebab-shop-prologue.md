@@ -16,7 +16,13 @@ The first call was about Thuisbezorgd. Their orders came in through T-Connect, r
 
 ![The HP Smart Tank that was doing a receipt printer's job in a kebab kitchen](https://res.cloudinary.com/haazen/image/upload/Kebab%20Shop/hp-printer.webp)
 
-So I fixed it. Then, because I was honestly just tired of that printer, I replaced it with a small USB receipt printer.
+It printed every single order on a full sheet of A4. And when it was having a bad day, it printed them like this:
+
+![A Thuisbezorgd order on A4, with half of every line missing](https://res.cloudinary.com/haazen/image/upload/Kebab%20Shop/final-straw-slip.webp)
+
+That one was my final straw. TODO: finish the "as..." sentence.
+
+So I fixed it, and then replaced it with a small USB receipt printer.
 
 That was close to four years ago. I'm still the person who gets called.
 
