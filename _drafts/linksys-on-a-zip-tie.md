@@ -37,7 +37,9 @@ These days the shop's network looks like this:
 
 The KPN modem sits in the middle, and everything else hangs off it on its own network: the Linksys for guests, a router from the company that manages the card machine and register, and the NVR for the cameras (more on those in part 2).
 
-NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests. I tested it back then, and again while writing this post: from the guest Wi-Fi, I can't reach the KPN router or the camera NVR. Client isolation is on too, so guests can't see each other either. On an open network, that one matters.
+NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests. I tested it back then, and again while writing this post: from the guest Wi-Fi, I can't reach the KPN router or the camera NVR. Guests can't reach the router's admin page either; I checked that too.
+
+The one weak spot: client isolation. I thought it was on, but the guest network runs on a virtual wireless interface, and Tomato doesn't offer isolation there. So on this open network, guests could in theory see each other's devices. Same advice as any public Wi-Fi: keep file sharing off on your phone and laptop.
 
 ## Six years later
 
