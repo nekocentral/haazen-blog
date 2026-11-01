@@ -16,7 +16,7 @@ They kept dropping off the Wi-Fi. And when they were connected, the app often ju
 
 ## Round two: Dahua
 
-This time he did listen. The shop now has four Dahua cameras, with a fifth one planned for the staff side, covering the windows. All of them are wired with PoE straight from a Dahua NVR. No more Wi-Fi to drop off.
+This time he did listen. The shop now has four Dahua cameras, with a fifth one planned for the staff side, covering the windows. Those are covered in full-height stickers, so it can't see outside, and the staff all know about the cameras. All of them are wired with PoE straight from a Dahua NVR. No more Wi-Fi to drop off.
 
 The NVR lives in the ceiling, out of sight and out of reach, with 4 TB of storage. Heat hasn't been an issue up there.
 
