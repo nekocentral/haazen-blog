@@ -47,7 +47,11 @@ The big black box got replaced with a SmartEVSE v3 from Stegen.
 
 ![First power-up with the SmartEVSE in place of the old controller](/images/ev-charger/smartevse-first-boot.webp)
 
-Somewhere around June to August 2025 I also swapped the old meter for an Eastron SDM630 Modbus V3 and connected it to the SmartEVSE. Now I can see exactly how much each charging session used. While I was in there anyway, I rewired the whole thing in 4 mm² cable.
+Somewhere around June to August 2025 I also swapped the old meter for an Eastron SDM630 Modbus V3 and connected it to the SmartEVSE. Now I can see exactly how much each charging session used.
+
+![After the first 2025 upgrade: SmartEVSE up top, the Eastron meter in the middle](/images/ev-charger/eastron-upgrade.webp)
+
+Later on I went back in and rewired the whole thing in 4 mm² cable.
 
 ## RFID and guest charging
 
