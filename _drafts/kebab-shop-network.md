@@ -40,6 +40,8 @@ That lasted until recently, when its hard drive died. The cameras moved to a pro
 
 Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set up client isolation, so customers can't see each other's devices.
 
+The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup, which pushes a lot of video traffic around, so they got their own VLAN where it can't get in anyone's way. More on that in part 5.
+
 ## The worst part
 
 Replacing that €10 switch. Its uplink is a cable coming out of the wall that's only just long enough to reach. So guess what I also didn't have to mount? The new switch is held in place by its cable.
