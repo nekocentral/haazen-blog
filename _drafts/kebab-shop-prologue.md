@@ -20,9 +20,9 @@ It printed every single order on a full sheet of A4. And when it was having a ba
 
 ![A Thuisbezorgd order on A4, with half of every line missing](https://res.cloudinary.com/haazen/image/upload/Kebab%20Shop/final-straw-slip.webp)
 
-That one was my final straw. TODO: finish the "as..." sentence.
+That one was my final straw. I was just done with it.
 
-So I fixed it, and then replaced it with a small USB receipt printer.
+So I fixed it one last time, and then replaced it. Marktplaats came through again: a second-hand USB receipt printer, with a box of rolls thrown in. It came from a local vocational school (MBO), where they'd used it to teach students how registers work. Now it's doing the real thing.
 
 That was close to four years ago. I'm still the person who gets called.
 
