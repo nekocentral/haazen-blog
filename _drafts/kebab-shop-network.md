@@ -38,7 +38,7 @@ Originally, the Omada controller ran as software on an HPE EC200a, a little serv
 
 That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
-Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set up client isolation, so customers can't see each other's devices.
+Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set it up properly: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
 
 The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup, which pushes a lot of video traffic around, so they got their own VLAN where it can't get in anyone's way. More on that in part 5.
 
@@ -47,5 +47,3 @@ The one exception to the flat network: the TVs. They run on an HDMI-over-IP setu
 Replacing that €10 switch. Its uplink is a cable coming out of the wall that's only just long enough to reach. So guess what I also didn't have to mount? The new switch is held in place by its cable.
 
 Again. See also: [the RCM sensor in my EV charger](/2026/11/ev-charger-build/) and [the router on a zip tie](/2026/11/linksys-on-a-zip-tie/). At this point it's less a coincidence and more a mounting strategy.
-
-TODO: is the "Guest Network" option on for the customer SSID? Test: from the customer Wi-Fi, open the NVR's IP address.
