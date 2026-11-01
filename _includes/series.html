@@ -1,12 +1,15 @@
 {% if page.series %}
 {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
-{% for p in series_posts %}{% if p.url == page.url %}{% assign part = forloop.index %}{% endif %}{% endfor %}
+{% assign numbered = series_posts | where_exp: "p", "p.series_label == nil" %}
+{% for p in numbered %}{% if p.url == page.url %}{% assign part = forloop.index %}{% endif %}{% endfor %}
 <div class="box series-box">
-	<p class="series-title">Part {{ part }} of {{ series_posts.size }} in the <strong>{{ page.series }}</strong> series</p>
-	<ol>
+	<p class="series-title">{% if page.series_label %}{{ page.series_label }} to the{% else %}Part {{ part }} of {{ numbered.size }} in the{% endif %} <strong>{{ page.series }}</strong> series</p>
+	<ul class="alt">
+		{% assign n = 0 %}
 		{% for p in series_posts %}
-		<li>{% if p.url == page.url %}<strong>{{ p.title }}</strong>{% else %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}</li>
+		{% if p.series_label %}{% assign label = p.series_label %}{% else %}{% assign n = n | plus: 1 %}{% assign label = "Part " | append: n %}{% endif %}
+		<li>{{ label }}: {% if p.url == page.url %}<strong>{{ p.title }}</strong>{% else %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}</li>
 		{% endfor %}
-	</ol>
+	</ul>
 </div>
 {% endif %}

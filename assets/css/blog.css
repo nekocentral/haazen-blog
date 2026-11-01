@@ -43,4 +43,4 @@ ul.pagination .button.disabled { opacity: 0.25; pointer-events: none; }
 	font-size: 0.8em; letter-spacing: 0.1em; text-transform: uppercase;
 	margin-bottom: 0.75em;
 }
-.series-box ol { margin-bottom: 1em; }
+.series-box ul { margin-bottom: 1em; }
