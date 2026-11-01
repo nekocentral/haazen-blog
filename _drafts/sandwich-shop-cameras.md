@@ -22,7 +22,7 @@ TODO: any cable-pulling stories?
 
 ## The network
 
-The NVR sits on the shop's LAN. The card machine and register are on their own network: the company that manages them added a separate router under the counter. Guests are on the Linksys, behind NAT, blocked from the LAN.
+The NVR plugs into the KPN modem, and the cameras hang off the NVR's own PoE ports, on their own network. The card machine and register have their own router from the company that manages them, and guests are on the Linksys, blocked from the rest. There's a diagram in [the router post](/2026/11/linksys-on-a-zip-tie/).
 
 TODO: how remote viewing works (Dahua app/P2P, port forward, or none).
 
