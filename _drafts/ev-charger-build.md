@@ -53,15 +53,21 @@ Somewhere around June to August 2025 I also swapped the old meter for an Eastron
 
 Later on I went back in and rewired the whole thing in 4 mm² cable.
 
+![After the second upgrade: everything rewired in 4 mm² cable](/images/ev-charger/rewired.webp)
+
 ## RFID and guest charging
 
 I added the RFID reader from Stegen's site, so the charger reads official charge cards and tokens. That's not just for locking it: it means guests can use their own card and get billed for it. The billing side is handled by Tap Electric over OCPP.
 
 ## Safety
 
-Since the charger hangs off my existing garage electrical system, I added a DC/AC residual current sensor from Stegen, the RCM14-01. A regular RCD can't reliably detect DC fault currents, and an EV charger can produce those, so this one watches for both.
+Since the charger hangs off my existing garage electrical system, I added a DC/AC residual current sensor from Stegen, the RCM14-03. A regular RCD can't reliably detect DC fault currents, and an EV charger can produce those, so this one watches for both.
 
 I fitted it during the rewire, and my god, routing the three phases and the neutral through it was a pain. All four cables have to pass through the sensor's hole, and they barely fit. Literally barely.
+
+Upside: I didn't even have to mount it. The cables hold it in place, and it really isn't going anywhere.
+
+![The RCM14-03 sensor, held in place by nothing but the cables running through it](/images/ev-charger/rcm-sensor.webp)
 
 ## Where it's at now
 
