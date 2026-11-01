@@ -18,13 +18,13 @@ This time he did listen. The shop now has four Dahua cameras, with a fifth one p
 
 The NVR lives in the ceiling, out of sight and out of reach, with 4 TB of storage. Heat hasn't been an issue up there.
 
-TODO: any cable-pulling stories?
+Getting the cables there was the worst part. Four Cat5e cables through a single normal conduit meant for one or two. It took my mate and me an hour or two of pulling, pushing and swearing. Apparently every project of mine involves forcing too many cables through too small a hole (see also: [the EV charger](/2026/11/ev-charger-build/)).
 
 ## The network
 
 The NVR plugs into the KPN modem, and the cameras hang off the NVR's own PoE ports, on their own network. The card machine and register have their own router from the company that manages them, and guests are on the Linksys, blocked from the rest. There's a diagram in [the router post](/2026/11/linksys-on-a-zip-tie/).
 
-TODO: how remote viewing works (Dahua app/P2P, port forward, or none).
+Remote viewing goes through Dahua's DMSS app. It connects through Dahua's own cloud service, so there's no port forward on the KPN modem and the NVR isn't exposed to the internet directly. The trade-off is relying on Dahua's cloud, and keeping the NVR's firmware up to date.
 
 ## Keeping footage (not too long)
 
