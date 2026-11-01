@@ -23,7 +23,7 @@ Lucky that's all it did. So yeah: time to upgrade to something proper.
 
 ## A €50 EVBox
 
-Instead of buying a new wallbox, I found a second-hand EVBox on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why the cover is bright ING orange. (Still need to paint that thing.)
+Instead of buying a new wallbox, I found a second-hand EVBox BusinessLine on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why the cover is bright ING orange. (Still need to paint that thing.)
 
 ![The EVBox on the garage wall, ING orange and all](/images/ev-charger/evbox-installed.webp)
 
@@ -45,9 +45,9 @@ The basic hardware was fine. The part that made it an EVBox was the controller, 
 
 The big black box got replaced with a SmartEVSE v3 from Stegen.
 
-Somewhere around June to August 2025 I also swapped the old meter for an Eastron SDM630 Modbus V3 and connected it to the SmartEVSE. Now I can see exactly how much each charging session used. While I was in there anyway, I rewired the whole thing in 4 mm² cable.
+![First power-up with the SmartEVSE in place of the old controller](/images/ev-charger/smartevse-first-boot.webp)
 
-<!-- TODO: photo of the inside after the rebuild -->
+Somewhere around June to August 2025 I also swapped the old meter for an Eastron SDM630 Modbus V3 and connected it to the SmartEVSE. Now I can see exactly how much each charging session used. While I was in there anyway, I rewired the whole thing in 4 mm² cable.
 
 ## RFID and guest charging
 
@@ -61,4 +61,6 @@ I fitted it during the rewire, and my god, routing the three phases and the neut
 
 ## Where it's at now
 
-TODO: how it's been running, what you'd do differently, any warnings for people who want to try this.
+It's been running okay since the end of January 2023. No more melted sockets, and every session shows up in the logs.
+
+Next on the list: painting that orange thing.
