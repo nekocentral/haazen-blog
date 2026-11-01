@@ -1,10 +1,9 @@
 ---
 title: I told him not to buy Lidl cameras
-tags: [cctv, networking, sandwich-shop]
+series: Sandwich shop
+tags: [local-shops, cctv, networking]
 image: TODO-cloudinary-url
 ---
-
-Same sandwich shop as [the router on a zip tie](/2026/11/linksys-on-a-zip-tie/). TODO: fix this link's date once that post is published.
 
 The shop had a couple of break-ins. First their cash register got stolen, so I lent them one of mine. Then the fuckers stole that one too.
 
@@ -24,7 +23,7 @@ Getting the cables there was the worst part. Four Cat5e cables through a single 
 
 ## The network
 
-The NVR plugs into the KPN modem, and the cameras hang off the NVR's own PoE ports, on their own network. The card machine and register have their own router from the company that manages them, and guests are on the Linksys, blocked from the rest. There's a diagram in [the router post](/2026/11/linksys-on-a-zip-tie/).
+The NVR plugs into the KPN modem, and the cameras hang off the NVR's own PoE ports, on their own network. The card machine and register have their own router from the company that manages them, and guests are on the Linksys, blocked from the rest. There's a diagram in part 1.
 
 Remote viewing goes through Dahua's DMSS app. It connects through Dahua's own cloud service, so there's no port forward on the KPN modem and the NVR isn't exposed to the internet directly. The trade-off is relying on Dahua's cloud, and keeping the NVR's firmware up to date.
 

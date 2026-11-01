@@ -8,30 +8,13 @@ main_alt: false
 		<header class="major">
 			<h1>Blog</h1>
 		</header>
-		<p>Homelab builds, IT fixes and whatever else I'm tinkering with.</p>
+		<p>Homelab builds, IT fixes and whatever else I'm tinkering with. Including a lot of IT for <a href="{{ '/shops/' | relative_url }}">local shops</a>.</p>
 	</div>
 </section>
 
 <section id="two" class="spotlights">
 	{% for post in paginator.posts %}
-	{% assign img = post.image | default: site.default_image %}
-	<section>
-		<a href="{{ post.url | relative_url }}" class="image">
-			<img src="{{ img | relative_url }}" alt=""{% if post.image_position %} style="object-position: {{ post.image_position }}"{% endif %} />
-		</a>
-		<div class="content">
-			<div class="inner">
-				<p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>{% if post.tags.size > 0 %} &middot; {{ post.tags | join: ', ' }}{% endif %}</p>
-				<header class="major">
-					<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-				</header>
-				<p>{{ post.excerpt | strip_html | truncatewords: 36 }}</p>
-				<ul class="actions">
-					<li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+	{% include post-spotlight.html post=post %}
 	{% endfor %}
 </section>
 

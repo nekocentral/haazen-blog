@@ -1,0 +1,28 @@
+---
+layout: default
+title: Local shops
+permalink: /shops/
+main_alt: false
+---
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Local shops</h1>
+		</header>
+		<p>Networks, cameras, Wi-Fi and whatever else I've ended up doing for local shops. Some of it went well. Some of it went back to normal lighting.</p>
+	</div>
+</section>
+
+{% if site.tags.local-shops == nil %}
+<section id="two">
+	<div class="inner">
+		<p>The first shop posts are on their way. Expect zip ties.</p>
+	</div>
+</section>
+{% else %}
+<section id="two" class="spotlights">
+	{% for post in site.tags.local-shops %}
+	{% include post-spotlight.html post=post %}
+	{% endfor %}
+</section>
+{% endif %}

@@ -8,6 +8,7 @@ layout: default
 		</header>
 		<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>{% if page.tags.size > 0 %} &middot; {{ page.tags | join: ', ' }}{% endif %}</p>
 		{% if page.image and page.header_image != false %}<span class="image main"><img src="{{ page.image | relative_url }}" alt="" /></span>{% endif %}
+		{% include series.html %}
 		<div class="post-content">
 			{{ content }}
 		</div>

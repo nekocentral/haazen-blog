@@ -1,0 +1,18 @@
+{% assign img = include.post.image | default: site.default_image %}
+<section>
+	<a href="{{ include.post.url | relative_url }}" class="image">
+		<img src="{{ img | relative_url }}" alt=""{% if include.post.image_position %} style="object-position: {{ include.post.image_position }}"{% endif %} />
+	</a>
+	<div class="content">
+		<div class="inner">
+			<p class="post-meta"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%-d %B %Y' }}</time>{% if include.post.tags.size > 0 %} &middot; {{ include.post.tags | join: ', ' }}{% endif %}</p>
+			<header class="major">
+				<h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+			</header>
+			<p>{{ include.post.excerpt | strip_html | truncatewords: 36 }}</p>
+			<ul class="actions">
+				<li><a href="{{ include.post.url | relative_url }}" class="button">Read more</a></li>
+			</ul>
+		</div>
+	</div>
+</section>

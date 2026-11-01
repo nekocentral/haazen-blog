@@ -28,6 +28,11 @@ Then open http://localhost:4000.
 
 Add `image: /images/whatever.jpg` (or a full https:// URL) to a post's front matter. It shows on the blog list and at the top of the post. Posts without one use `default_image` from `_config.yml`. Use `image_position: center 70%` to choose which part of a tall photo shows on the list. Set `excerpt: "..."` to choose the preview text on the list (otherwise it's the first paragraph). Add `header_image: false` to use the image on the list only, without repeating it at the top of the post.
 
+## Series and shop posts
+
+- `series: Kebab shop` puts a "Part X of Y" box at the top of every post in that series, linking the other parts (ordered by date).
+- The `local-shops` tag puts a post on [/shops/](https://blog.haazen.xyz/shops/).
+
 ## Credits
 
 Design: [Forty](https://html5up.net/forty) by HTML5 UP, CC BY 3.0 (see `LICENSE.txt`).

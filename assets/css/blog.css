@@ -36,3 +36,11 @@ ul.pagination .button.disabled { opacity: 0.25; pointer-events: none; }
 	max-width: 100%;
 	margin: 0 auto 2em auto;
 }
+
+/* Series box at the top of posts that are part of a series */
+.series-box { padding: 1.25em 1.5em 0.5em 1.5em; margin-bottom: 2.5em; }
+.series-box .series-title {
+	font-size: 0.8em; letter-spacing: 0.1em; text-transform: uppercase;
+	margin-bottom: 0.75em;
+}
+.series-box ol { margin-bottom: 1em; }

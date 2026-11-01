@@ -1,0 +1,12 @@
+{% if page.series %}
+{% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
+{% for p in series_posts %}{% if p.url == page.url %}{% assign part = forloop.index %}{% endif %}{% endfor %}
+<div class="box series-box">
+	<p class="series-title">Part {{ part }} of {{ series_posts.size }} in the <strong>{{ page.series }}</strong> series</p>
+	<ol>
+		{% for p in series_posts %}
+		<li>{% if p.url == page.url %}<strong>{{ p.title }}</strong>{% else %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}</li>
+		{% endfor %}
+	</ol>
+</div>
+{% endif %}
