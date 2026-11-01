@@ -3,7 +3,7 @@ title: Building my own EV charger from a €50 EVBox
 date: 2026-11-01 02:32:03 +0000   # time keeps it above 'Hello again' (same day)
 excerpt: "It started with the granny charger that came with my old Leaf. It nearly burned down my garage."
 tags: [ev, electrical, diy]
-image: https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/evbox-installed.webp
+image: https://res.cloudinary.com/haazen/image/upload/EV%20Charger%20Project/evbox-installed.jpg   # .jpg so link previews work everywhere; Cloudinary converts
 image_position: center 72%   # which part of the photo shows on the blog list
 header_image: false   # image used on the blog list only; it already appears in the story
 ---

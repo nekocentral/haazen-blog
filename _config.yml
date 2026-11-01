@@ -61,3 +61,11 @@ exclude:
   - Gemfile.lock
   - vendor
   - LICENSE.txt
+
+# Pages (front page, shops, 404) use the banner as their link-preview image
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image: /images/banner.jpg

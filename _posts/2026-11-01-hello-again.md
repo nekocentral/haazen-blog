@@ -1,6 +1,8 @@
 ---
 title: Hello again
 tags: [meta]
+image: /images/banner.jpg
+header_image: false   # banner for list + link previews only
 ---
 
 A coworker has been pestering me for a while to start a blog about all the random stuff I've been doing. So, fine. Here it is.

@@ -4,7 +4,7 @@ date: 2026-11-01 14:13:00 +0000
 excerpt: "The sandwich shop at my local train station has my old Linksys router hanging from a zip tie. I put it there around 2020, and it's still there."
 series: Sandwich shop
 tags: [local-shops, networking, tomato, wifi]
-image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-now.webp
+image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-now.jpg   # .jpg so link previews work everywhere; Cloudinary converts
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
 
