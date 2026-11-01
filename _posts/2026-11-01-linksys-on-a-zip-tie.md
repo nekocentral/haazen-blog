@@ -26,7 +26,7 @@ There's a bandwidth limit too: all guests together share at most 10 Mbit/s down 
 
 ## The captive portal that never was
 
-The plan was a simple "click to accept" page, stored on a USB stick plugged into the router. Captive portals were a pain in the arse to get working back then: you have to block access but still allow just enough for the portal page itself to load. I fought with it for a while and then just gave up.
+The plan was a simple "click to accept" page, stored on a USB stick plugged into the router. Captive portals were a pain in the arse to get working back then: you have to block access but still allow just enough for the portal page itself to load. I fought with it for a while and then just gave up. The firewall script still opens port 5280 for guests, where the portal was supposed to live. The door's still propped open for a portal that never moved in.
 
 ## Keeping guests away from the till
 
@@ -42,7 +42,45 @@ These days the shop's network looks like this:
 
 The KPN modem sits in the middle, and everything else hangs off it on its own network: the Linksys for guests, a router from the company that manages the card machine and register, and the NVR for the cameras (more on those in part 2).
 
-NAT on its own only blocks one direction, though: guests could still reach out to anything on the KPN side. So I also added a firewall rule on the Linksys that blocks the KPN LAN range for guests. I tested it back then, and again while writing this post: from the guest Wi-Fi, I can't reach the KPN router or the camera NVR. Guests can't reach the router's admin page either; I checked that too.
+NAT on its own only blocks one direction, though: guests can still reach out to anything on the KPN side. Back then I wrote a firewall script for that, and I was pretty sure it covered everything.
+
+While writing this post I dug it up and checked the live firewall rules. Turns out it only protected *my* management network on the Linksys, not the shop's. Guests could reach the KPN LAN just fine; the NVR and the Experia Box were simply saying no on their own. So I added two lines on the spot. The script now looks like this:
+
+```bash
+#!/bin/sh
+LAN_IP="$(nvram get lan_ipaddr)"
+LAN_NET="$LAN_IP/$(nvram get lan_netmask)"
+PRIVATE_IF="br0"
+GUEST_IF="br1"
+
+PORT_DHCP="67"
+PORT_DNS="53"
+PORT_cp="5280"
+
+STATE_NEW="-m state --state NEW"
+REJECT="REJECT --reject-with icmp-host-prohibited"
+REJECT_TCP="REJECT --reject-with tcp-reset"
+
+# limit guests to essential router services (icmp (echo/reply), dhcp, dns)
+iptables -I INPUT         -i $GUEST_IF -j $REJECT
+iptables -I INPUT -p tcp  -i $GUEST_IF -j $REJECT_TCP
+iptables -I INPUT -p icmp -i $GUEST_IF -j ACCEPT
+iptables -I INPUT -p udp  -i $GUEST_IF --dport $PORT_DHCP -j ACCEPT
+iptables -I INPUT -p tcp  -i $GUEST_IF --dport $PORT_DNS  -j ACCEPT
+iptables -I INPUT -p udp  -i $GUEST_IF --dport $PORT_DNS  -j ACCEPT
+iptables -I INPUT -p tcp  -i $GUEST_IF --dport $PORT_cp  -j ACCEPT
+iptables -I INPUT -p udp  -i $GUEST_IF --dport $PORT_cp  -j ACCEPT
+
+# deny access to private network by guests (internet only)
+iptables -I FORWARD        -i $GUEST_IF -d $LAN_NET $STATE_NEW -j $REJECT
+iptables -I FORWARD -p tcp -i $GUEST_IF -d $LAN_NET $STATE_NEW -j $REJECT_TCP
+
+# deny access to the shop's KPN LAN by guests (added while writing this post)
+iptables -I FORWARD        -i $GUEST_IF -d 192.168.2.0/24 $STATE_NEW -j $REJECT
+iptables -I FORWARD -p tcp -i $GUEST_IF -d 192.168.2.0/24 $STATE_NEW -j $REJECT_TCP
+```
+
+The proof it works: before, opening the Experia Box from the guest Wi-Fi just timed out. Now it's refused instantly, by the Linksys. Guests can't reach the router's admin page either; I checked that too.
 
 The one weak spot: client isolation. I thought it was on, but the guest network runs on a virtual wireless interface, and Tomato doesn't offer isolation there. So on this open network, guests could in theory see each other's devices. Same advice as any public Wi-Fi: keep file sharing off on your phone and laptop.
 
