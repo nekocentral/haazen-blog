@@ -47,6 +47,8 @@ The big black box got replaced with a SmartEVSE v3 from Stegen.
 
 ![First power-up with the SmartEVSE in place of the old controller](/images/ev-charger/smartevse-first-boot.webp)
 
+The original LED ring is wired to the SmartEVSE through its RGB wires, so the full ring still works. And that thing is BRIGHT. My whole garage lights up when it's charging. I got lucky there too, because those EVBox LED rings are known to fail.
+
 Somewhere around June to August 2025 I also swapped the old meter for an Eastron SDM630 Modbus V3 and connected it to the SmartEVSE. Now I can see exactly how much each charging session used.
 
 ![After the first 2025 upgrade: SmartEVSE up top, the Eastron meter in the middle](/images/ev-charger/eastron-upgrade.webp)
@@ -92,7 +94,7 @@ The cable for the rewire I got for free from someone I know, so that's just a fe
 
 ## Where it's at now
 
-It's been running okay since the end of January 2023. Mostly. It's set to 15 A, because the cable to my garage is only rated for 16 A.
+It's been running okay since the end of January 2023. Mostly. These days it charges my Hyundai Inster. It's set to 15 A, because the cable to my garage is only rated for 16 A, and it's pushed 4109 kWh since the Eastron meter went in.
 
 Every now and then it loses its Wi-Fi connection. No Wi-Fi means no OCPP, so card authentication stops working and nobody can start a charge. The only fix so far: a hard reboot of the whole thing.
 
