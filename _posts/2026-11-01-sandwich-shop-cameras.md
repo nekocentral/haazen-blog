@@ -1,8 +1,10 @@
 ---
 title: I told him not to buy Lidl cameras
+date: 2026-11-01 14:18:00 +0000
 series: Sandwich shop
 tags: [local-shops, cctv, networking]
-image: TODO-cloudinary-url
+image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/dahua-cameras.webp
+header_image: false   # image used on the blog list only; it already appears in the story
 ---
 
 The shop had a couple of break-ins. First their cash register got stolen, so I lent them one of mine. Then the fuckers stole that one too.
@@ -13,9 +15,13 @@ So when the owner wanted cameras, I told him: don't be a cheap ass and get camer
 
 They kept dropping off the Wi-Fi. And when they were connected, the app often just wouldn't connect to them. Cameras that only sometimes record aren't much of a camera system. One of them is actually still hanging by the window. Still powered, too. A monument to cheap-assery.
 
+![The Lidl camera, still hanging by the window (and still powered)](https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/lidl-camera.webp)
+
 ## Round two: Dahua
 
 This time he did listen. The shop now has four Dahua cameras, with a fifth one planned for the staff side, covering the windows. Those are covered in full-height stickers, so it can't see outside, and the staff all know about the cameras. All of them are wired with PoE straight from a Dahua NVR. No more Wi-Fi to drop off.
+
+![Three of the four Dahua domes, sharing one plate on the ceiling](https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/dahua-cameras.webp)
 
 The NVR lives in the ceiling, out of sight and out of reach, with 4 TB of storage. Heat hasn't been an issue up there.
 

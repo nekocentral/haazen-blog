@@ -1,8 +1,10 @@
 ---
 title: My router has been hanging from a zip tie for six years
+date: 2026-11-01 14:13:00 +0000
 series: Sandwich shop
 tags: [local-shops, networking, tomato, wifi]
-image: TODO-cloudinary-url-of-the-2021-photo
+image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-now.webp
+header_image: false   # image used on the blog list only; it already appears in the story
 ---
 
 The sandwich shop at my local train station has my old Linksys router hanging from a zip tie. I put it there around 2020, and it's still there.
@@ -11,7 +13,7 @@ They wanted guest Wi-Fi they could switch off in the evening. So I flashed my ol
 
 About half a year later their KPN modem died, taking the debit card machine and the phone with it. I dropped off a Stonesoft FW-315 firewall and an ATA from my own spare kit to bridge the gap. (Why do I own an enterprise firewall? Dumpster dive at my employer at the time, with approval. I had the rack-mount versions too and ran those at home for a while, until I nuked the 10G card by hot-swapping it.) A week or two later KPN sent a new modem and my gear went home. The Linksys stayed.
 
-![The setup in 2021: the Linksys hanging top right, my temporary Stonesoft firewall on the shelf](TODO-cloudinary-url-of-the-2021-photo)
+![The setup in 2021: the Linksys hanging top right, my temporary Stonesoft firewall on the shelf](https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-2021.webp)
 
 ## The setup
 
@@ -42,6 +44,8 @@ NAT on its own only blocks one direction, though: guests could still reach out t
 The one weak spot: client isolation. I thought it was on, but the guest network runs on a virtual wireless interface, and Tomato doesn't offer isolation there. So on this open network, guests could in theory see each other's devices. Same advice as any public Wi-Fi: keep file sharing off on your phone and laptop.
 
 ## Six years later
+
+![The Linksys today, still on its zip tie, with KPN's Experia Box where my Stonesoft used to be](https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-now.webp)
 
 It's had no firmware updates since it went up. When I logged in for this post, it greeted me with an "Update Available!" banner. It's running AdvancedTomato 3.4-140, and the banner offers 3.5-140. That update is four years old. So I'm exactly one version behind on firmware that stopped moving years ago. And what am I missing? According to the changelog, it's a GUI-only update: a new dark colour scheme, a newer jQuery, and fixed timezones for Moscow and Kaliningrad. I think the sandwich shop will survive. Six years without updates isn't exactly best practice, which is one more reason the guests are walled off from everything else.
 
