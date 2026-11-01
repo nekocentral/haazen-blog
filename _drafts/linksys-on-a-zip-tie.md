@@ -24,7 +24,9 @@ The plan was a simple "click to accept" page, stored on a USB stick plugged into
 
 ## Keeping guests away from the till
 
-The debit card machine and the phone sit directly on the KPN router. The guest Wi-Fi runs behind NAT on the Linksys, in its own address range.
+The debit card machine and the phone sit directly on the KPN router.
+
+TODO: check. The company that manages the card machine and register has since added its own router under the counter, so the card machine may be on its own network now. The guest Wi-Fi runs behind NAT on the Linksys, in its own address range.
 
 NAT on its own only blocks one direction, though: guests could still reach out to devices on the shop's network. So, if I remember right, I also added a firewall rule on the Linksys that blocks the shop's LAN range for guests, and I tested it: from the guest Wi-Fi I couldn't reach anything on the LAN. Client isolation is on too, so guests can't see each other either.
 
