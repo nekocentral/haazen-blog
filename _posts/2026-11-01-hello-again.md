@@ -3,6 +3,13 @@ title: Hello again
 tags: [meta]
 ---
 
-For a while now, a coworker has been pestering me to start a blog about all the random things I've been working on. To be honest, I've been using Claude for most of them, which feels a bit weird to say, since I used to be somewhat anti-AI. But in all honesty, some of the things I'll be writing about are things I couldn't have done without its help.
+A coworker has been pestering me for a while to start a blog about all the random stuff I've been doing. So, fine. Here it is.
 
-So I guess the blog is back. This version is also a lot less maintenance, because it's just Markdown files built by Jekyll and hosted on GitHub Pages. The old one was a little PHP app I wrote back in 2017 using Slim and Twig, mainly because I felt a framework like Laravel would have been complete overkill. The old repo is [still on GitHub](https://github.com/nekocentral/Neko_Blog_Sytem) for nostalgia's sake.
+Fair warning: I've used Claude for a lot of it. That feels weird to say, because I used to be pretty anti-AI. But honestly, some of the things I'll be writing about I couldn't have done without it.
+
+Plus, I've started accepting AI at this point. If you can't beat them, join them, right? I still think most people are using it in places where it's not needed, and not everything in existence needs AI, but that's a different fight.
+Heck, I've even had Claude proofread this, because I know I'll make typos.
+
+This version is also way less maintenance. It's just Markdown files, built by Jekyll and hosted on GitHub Pages.
+
+The old one was a little PHP app I wrote back in 2017 with Slim and Twig, because something like Laravel felt like complete overkill. The repo is [still on GitHub](https://github.com/nekocentral/Neko_Blog_Sytem), for nostalgia's sake.
