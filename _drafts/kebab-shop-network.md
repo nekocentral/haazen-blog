@@ -22,7 +22,7 @@ I kept it simple: one network, straight off the Ziggo router, with TP-Link Omada
 
 Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/), I set it up properly this time: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
 
-The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup, which pushes a lot of video traffic around, so they got their own VLAN where it can't get in anyone's way. More on that in part 5.
+The one exception to the flat network: the TVs. They run on an HDMI-over-IP setup that blasts uncontrolled multicast everywhere, and it did not play nice with the rest of the network. So it got its own VLAN. It even refused to work until I disabled IGMP snooping on that VLAN, which means its multicast just floods every port in it. Fine, as long as it stays in its own little box. More on that in part 5.
 
 ## The gear
 
