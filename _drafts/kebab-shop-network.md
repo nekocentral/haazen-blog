@@ -34,8 +34,10 @@ It didn't start out like that. At first there was one access point, until it tur
 
 And the counter switch was originally a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
-Originally, the Omada controller ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It also ran Agent DVR for the cameras and Home Assistant, but those get their own parts later in this series.
+Originally, the Omada controller ran as software on an HPE EC200a, a little server I lent him. Semi-permanently. It also ran Agent DVR for the cameras and Home Assistant for the smart lighting, but those get their own parts later in this series.
 
-TODO: what runs the controller now, whether "smart cams" in Home Assistant meant cameras or the smart lighting, and whether customers get Wi-Fi too.
+That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
+
+TODO: do customers get Wi-Fi too, or is it staff only?
 
 ## TODO: the worst part
