@@ -7,6 +7,8 @@ image_position: center 72%   # which part of the photo shows on the blog list
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
 
+> **Note:** this build was all me. I did it before I started using Claude, so I was on my own for this one. Claude did help me write it down and proofread it, because writing has never really been my thing.
+
 It started with the granny charger that came with my old Leaf. It nearly burned down my garage.
 
 I walked into the garage one day and the FAULT light on the charger was on. Confused as hell, I went to check and unplugged everything. This is what I found:
