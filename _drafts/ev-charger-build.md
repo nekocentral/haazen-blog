@@ -94,8 +94,8 @@ The cable for the rewire I got for free from someone I know, so that's just a fe
 
 ## Where it's at now
 
-It's been running okay since the end of January 2023. Mostly. These days it charges my Hyundai Inster. It's set to 15 A, because the cable to my garage is only rated for 16 A, and it's pushed 4109 kWh since the Eastron meter went in.
+It's been running since the end of January 2023, and these days it charges my Hyundai Inster. It's set to 15 A, because the cable to my garage is only rated for 16 A, and it's pushed 4109 kWh since the Eastron meter went in.
 
-Every now and then it loses its Wi-Fi connection. No Wi-Fi means no OCPP, so card authentication stops working and nobody can start a charge. The only fix so far: a hard reboot of the whole thing.
+It hasn't been perfect, though. Every now and then it loses its Wi-Fi connection. No Wi-Fi means no OCPP, so card authentication stops working and nobody can start a charge. The only fix so far: a hard reboot of the whole thing.
 
 So that's the next upgrade: installing the new Ethernet module and hardwiring it. And after that, finally painting that orange thing.
