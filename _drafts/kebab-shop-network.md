@@ -30,7 +30,7 @@ The gear:
 | Center access point | TP-Link Omada EAP653 |
 | Kitchen access point | TP-Link Omada EAP225 |
 
-It didn't start out like that. At first there was one access point, until it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through. So the kitchen got its own.
+It didn't start out like that. The first version was the two 16-port switches and a single access point. At first there was one access point, an EAP620 HD, until it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through. So the kitchen got its own.
 
 And the counter switch was originally a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
@@ -38,6 +38,6 @@ Originally, the Omada controller ran as software on an HPE EC200a, a little serv
 
 That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
-TODO: do customers get Wi-Fi too, or is it staff only?
+Customers get Wi-Fi too, on that same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set up client isolation, so customers can't see each other's devices.
 
 ## TODO: the worst part
