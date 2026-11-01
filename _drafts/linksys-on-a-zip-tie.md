@@ -14,7 +14,7 @@ About half a year later their KPN modem died, taking the debit card machine and 
 
 ## The setup
 
-The router is a Linksys TODO-model from the Cisco era. I started out on Shibby's Tomato build, and I think it's on FreshTomato now. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi switches itself off in the evening without anyone having to remember.
+The router is a Linksys TODO-model from the Cisco era. I started out on Shibby's Tomato build, and I think it's on FreshTomato now. Tomato has a built-in schedule for the wireless, so the guest Wi-Fi is on during opening hours and switches itself off after closing, without anyone having to remember. Not that many people use it, I think, but it's there.
 
 TODO: rate limit. If there is one, what's it set to?
 
