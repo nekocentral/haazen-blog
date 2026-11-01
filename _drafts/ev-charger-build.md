@@ -53,7 +53,7 @@ Somewhere around June to August 2025 I also swapped the old meter for an Eastron
 
 ![After the first 2025 upgrade: SmartEVSE up top, the Eastron meter in the middle](/images/ev-charger/eastron-upgrade.webp)
 
-Later on I went back in and rewired the whole thing in 4 mm² cable. (The old 12 V power supply is still in there, but it's not used anymore.)
+Later on I went back in and rewired the whole thing in 4 mm² cable. (In the photo below, the old 12 V power supply is still in there, powering a Raspberry Pi. I wanted to try ISO 15118 to read the car's state of charge, but I've parked that idea for now.)
 
 ![After the second upgrade: everything rewired in 4 mm² cable](/images/ev-charger/rewired.webp)
 
