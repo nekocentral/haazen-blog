@@ -51,13 +51,17 @@ Somewhere around June to August 2025 I also swapped the old meter for an Eastron
 
 ![After the first 2025 upgrade: SmartEVSE up top, the Eastron meter in the middle](/images/ev-charger/eastron-upgrade.webp)
 
-Later on I went back in and rewired the whole thing in 4 mm² cable.
+Later on I went back in and rewired the whole thing in 4 mm² cable. (The old 12 V power supply is still in there, but it's not used anymore.)
 
 ![After the second upgrade: everything rewired in 4 mm² cable](/images/ev-charger/rewired.webp)
 
 ## RFID and guest charging
 
 I added the RFID reader from Stegen's site, so the charger reads official charge cards and tokens. That's not just for locking it: it means guests can use their own card and get billed for it. The billing side is handled by Tap Electric over OCPP.
+
+## Load balancing
+
+The SmartEVSE also does load balancing, so charging the car doesn't overload the house connection. I've got a WaterP1MeterKit from SmartHomeShop.io on my smart meter, connected to Home Assistant. Home Assistant publishes the house's usage in real time over MQTT, and the SmartEVSE adjusts the charging current to match.
 
 ## Safety
 
@@ -69,9 +73,26 @@ Upside: I didn't even have to mount it. The cables hold it in place, and it real
 
 ![The RCM14-03 sensor, held in place by nothing but the cables running through it](/images/ev-charger/rcm-sensor.webp)
 
+Recently someone from Exexis was over, and while we were chatting I asked him to have a look at it. He was positive about it, no complaints.
+
+> **Disclaimer:** I'm somewhat trained in this, but not everyone is. This is mains voltage, on three phases. If you're not sure what you're doing, get an electrician.
+
+## What it cost
+
+| Part | Price |
+|---|---|
+| EVBox BusinessLine (second-hand) | €50 |
+| SmartEVSE v3 | €150 |
+| Eastron SDM630 Modbus V3 meter | €99 |
+| RCM14-03 residual current sensor | €59 |
+| RFID reader | €29 |
+| **Total** | **€387** |
+
+Plus cable and small bits. Back then a brand new charger was €500 and up, and I know exactly what's inside mine.
+
 ## Where it's at now
 
-It's been running okay since the end of January 2023. Mostly.
+It's been running okay since the end of January 2023. Mostly. It's set to 15 A, because the cable to my garage is only rated for 16 A.
 
 Every now and then it loses its Wi-Fi connection. No Wi-Fi means no OCPP, so card authentication stops working and nobody can start a charge. The only fix so far: a hard reboot of the whole thing.
 
