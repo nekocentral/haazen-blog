@@ -61,6 +61,8 @@ I fitted it during the rewire, and my god, routing the three phases and the neut
 
 ## Where it's at now
 
-It's been running okay since the end of January 2023. No more melted sockets, and every session shows up in the logs.
+It's been running okay since the end of January 2023. Mostly.
 
-Next on the list: painting that orange thing.
+Every now and then it loses its Wi-Fi connection. No Wi-Fi means no OCPP, so card authentication stops working and nobody can start a charge. The only fix so far: a hard reboot of the whole thing.
+
+So that's the next upgrade: installing the new Ethernet module and hardwiring it. And after that, finally painting that orange thing.
