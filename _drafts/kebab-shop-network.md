@@ -30,7 +30,7 @@ The gear:
 | Center access point | TP-Link Omada EAP653 |
 | Kitchen access point | TP-Link Omada EAP225 |
 
-It didn't start out like that. The first version was the two 16-port switches and a single access point. At first there was one access point, an EAP620 HD, until it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through. So the kitchen got its own.
+It didn't start out like that. The first version was the two 16-port switches and a single access point. At first there was just the one access point in the center, until it turned out the kitchen sits behind a thick concrete wall that Wi-Fi just doesn't get through. So the kitchen got its own.
 
 And the counter switch was originally a €10 TP-Link switch from Action. It did its job, right up until the registers needed PoE. Now it's an Omada one like the rest.
 
@@ -38,6 +38,12 @@ Originally, the Omada controller ran as software on an HPE EC200a, a little serv
 
 That lasted until recently, when its hard drive died. The cameras moved to a proper NVR (more on that in part 7), and the Omada controller moved to TP-Link's cloud. One less box to babysit.
 
-Customers get Wi-Fi too, on that same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set up client isolation, so customers can't see each other's devices.
+Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And this time I actually set up client isolation, so customers can't see each other's devices.
 
-## TODO: the worst part
+## The worst part
+
+Replacing that €10 switch. Its uplink is a cable coming out of the wall that's only just long enough to reach. So guess what I also didn't have to mount? The new switch is held in place by its cable.
+
+Again. See also: [the RCM sensor in my EV charger](/2026/11/ev-charger-build/) and [the router on a zip tie](/2026/11/linksys-on-a-zip-tie/). At this point it's less a coincidence and more a mounting strategy.
+
+TODO: is the "Guest Network" option on for the customer SSID? Test: from the customer Wi-Fi, open the NVR's IP address.
