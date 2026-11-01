@@ -8,6 +8,8 @@ image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-now
 header_image: false   # image used on the blog list only; it already appears in the story
 ---
 
+> **Note:** I set this up around 2020, long before I started using Claude, so the build was all me. Claude helped me write this post, and sat with me while I re-checked the settings for it.
+
 The sandwich shop at my local train station has my old Linksys router hanging from a zip tie. I put it there around 2020, and it's still there.
 
 They wanted guest Wi-Fi they could switch off in the evening. So I flashed my old Linksys with Tomato, set a schedule, and zip-tied it to the wall.
