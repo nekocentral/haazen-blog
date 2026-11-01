@@ -31,6 +31,7 @@ Add `image: /images/whatever.jpg` (or a full https:// URL) to a post's front mat
 ## Series and shop posts
 
 - `series_label: Prologue` (or `Epilogue`, `Bonus`...) gives a series post a name instead of a part number.
+- `series_parts: 7` shows the planned number of parts ("Part 1 of 7") while a series is still being written.
 - `series: Kebab shop` puts a "Part X of Y" box at the top of every post in that series, linking the other parts (ordered by date).
 - The `local-shops` tag puts a post on [/shops/](https://blog.haazen.xyz/shops/).
 

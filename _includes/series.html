@@ -3,7 +3,7 @@
 {% assign numbered = series_posts | where_exp: "p", "p.series_label == nil" %}
 {% for p in numbered %}{% if p.url == page.url %}{% assign part = forloop.index %}{% endif %}{% endfor %}
 <div class="box series-box">
-	<p class="series-title">{% if page.series_label %}{{ page.series_label }} to the{% else %}Part {{ part }} of {{ numbered.size }} in the{% endif %} <strong>{{ page.series }}</strong> series</p>
+	<p class="series-title">{% if page.series_label %}{{ page.series_label }} to the{% else %}{% assign total = numbered.size %}{% if page.series_parts and page.series_parts > total %}{% assign total = page.series_parts %}{% endif %}Part {{ part }} of {{ total }} in the{% endif %} <strong>{{ page.series }}</strong> series</p>
 	<ul class="alt">
 		{% assign n = 0 %}
 		{% for p in series_posts %}

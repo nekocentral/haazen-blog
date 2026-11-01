@@ -1,6 +1,7 @@
 ---
 title: Wiring a kebab shop from bare stone
 series: Kebab shop
+series_parts: 7   # planned; the box shows 'Part X of 7' until they're all out
 tags: [local-shops, networking]
 image: https://res.cloudinary.com/haazen/image/upload/Kebab%20shop/network-cubby.jpg
 header_image: false   # list + link previews; the photo is already in the story

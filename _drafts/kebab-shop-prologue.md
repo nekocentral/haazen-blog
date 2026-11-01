@@ -1,6 +1,7 @@
 ---
 title: How I became the kebab shop's IT guy
 series: Kebab shop
+series_parts: 7   # planned; the box shows 'Part X of 7' until they're all out
 series_label: Prologue
 excerpt: "I'm a semi-regular at a local kebab shop. Back at their old location, the owner found out I do IT. You can probably guess what happened next."
 tags: [local-shops]
