@@ -2,6 +2,8 @@
 title: Wiring a kebab shop from bare stone
 series: Kebab shop
 tags: [local-shops, networking]
+image: https://res.cloudinary.com/haazen/image/upload/Kebab%20shop/network-cubby.jpg
+header_image: false   # list + link previews; the photo is already in the story
 ---
 
 When I got to the new location, there was absolutely nothing. The owner had stripped the place down to the bare stone.
@@ -14,7 +16,10 @@ Walls stripped to the stone is the best possible moment to run cable. So I gave 
 
 The deal: he pulls cable wherever he thinks he'll need it, because I didn't feel like pulling it myself. I helped plan the main runs: down to the basement, to the camera spots, to where the TVs would hang, and into the kitchen.
 
-Most runs end up above the fuse box, in their own separate area, at the main switch. The kitchen and the cameras at the back run to the kitchen switch instead. And I still have about half a freaking spool left.
+Most runs end up above the fuse box, in their own separate area, at the main switch. The kitchen and the cameras at the back run to the kitchen switch instead.
+
+![The network corner above the fuse box: main switch, Ziggo router, and a lot of turquoise Cat6](https://res.cloudinary.com/haazen/image/upload/Kebab%20shop/network-cubby.webp)
+ And I still have about half a freaking spool left.
 
 ## The network
 
