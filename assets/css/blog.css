@@ -8,16 +8,17 @@
 	margin: -1em 0 2em 0;
 }
 
-.post-list article {
-	border-top: solid 1px rgba(212, 212, 255, 0.1);
-	padding: 2.5em 0 0.5em 0;
+/* Blog list uses Forty spotlights (same as haazen.xyz/projects) */
+.spotlights .post-meta { margin: 0 0 1em 0; }
+.spotlights h3 a { border-bottom: 0; }
+/* Image fills its half without stretching the row, whatever its shape */
+.spotlights > section > .image { position: relative; overflow: hidden; min-height: 15em; }
+.spotlights > section > .image img {
+	position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%; object-fit: cover;
 }
-.post-list article:first-child { border-top: 0; padding-top: 0; }
-.post-list .post-meta { margin: 0 0 0.5em 0; }
-.post-list h2 { margin-bottom: 0.5em; }
-.post-list h2 a { border-bottom: 0; }
 
-ul.pagination { margin-top: 2em; }
+ul.pagination { margin: 0; }
 ul.pagination .button.disabled { opacity: 0.25; pointer-events: none; }
 
 .post-content img { max-width: 100%; height: auto; }

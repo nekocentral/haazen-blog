@@ -46,7 +46,7 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main" class="alt">
+					<div id="main"{% unless page.main_alt == false %} class="alt"{% endunless %}>
 						{{ content }}
 					</div>
 

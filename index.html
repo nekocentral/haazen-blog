@@ -1,27 +1,43 @@
 ---
 layout: default
 title: Blog
+main_alt: false
 ---
 <section id="one">
 	<div class="inner">
 		<header class="major">
 			<h1>Blog</h1>
 		</header>
+		<p>Homelab builds, IT fixes and whatever else I'm tinkering with.</p>
+	</div>
+</section>
 
-		<div class="post-list">
-			{% for post in paginator.posts %}
-			<article>
+<section id="two" class="spotlights">
+	{% for post in paginator.posts %}
+	{% assign img = post.image | default: site.default_image %}
+	<section>
+		<a href="{{ post.url | relative_url }}" class="image">
+			<img src="{{ img | relative_url }}" alt="" />
+		</a>
+		<div class="content">
+			<div class="inner">
 				<p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>{% if post.tags.size > 0 %} &middot; {{ post.tags | join: ', ' }}{% endif %}</p>
-				<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+				<header class="major">
+					<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+				</header>
 				<p>{{ post.excerpt | strip_html | truncatewords: 36 }}</p>
 				<ul class="actions">
-					<li><a href="{{ post.url | relative_url }}" class="button small">Read more</a></li>
+					<li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
 				</ul>
-			</article>
-			{% endfor %}
+			</div>
 		</div>
+	</section>
+	{% endfor %}
+</section>
 
-		{% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 1 %}
+<section id="three">
+	<div class="inner">
 		<ul class="pagination">
 			<li>{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}" class="button">Newer</a>{% else %}<span class="button disabled">Newer</span>{% endif %}</li>
 			{% for n in (1..paginator.total_pages) %}
@@ -29,6 +45,6 @@ title: Blog
 			{% endfor %}
 			<li>{% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}" class="button">Older</a>{% else %}<span class="button disabled">Older</span>{% endif %}</li>
 		</ul>
-		{% endif %}
 	</div>
 </section>
+{% endif %}

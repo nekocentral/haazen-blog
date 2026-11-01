@@ -49,6 +49,9 @@ social:
     icon: fa-linkedin-in
     url: https://www.linkedin.com/in/mhaazen
 
+# Image used on the blog list when a post has no `image:` set
+default_image: /images/banner.jpg
+
 # Forty's banner/theme colour
 theme_color: "#242943"
 
