@@ -1,11 +1,14 @@
 ---
 title: Wiring a kebab shop from bare stone
+excerpt: "When I got to the new location, there was absolutely nothing. The owner had stripped the place down to the bare stone."
 series: Kebab shop
 series_parts: 7   # planned; the box shows 'Part X of 7' until they're all out
 tags: [local-shops, networking]
 image: https://res.cloudinary.com/haazen/image/upload/Kebab%20shop/network-cubby.jpg
 header_image: false   # list + link previews; the photo is already in the story
 ---
+
+> **Note:** the network went in about four years ago, long before I used Claude, so that was all me. When the EC200a died recently, Claude helped me pick the replacement NVR and its disk size. And it helped me write this up.
 
 When I got to the new location, there was absolutely nothing. The owner had stripped the place down to the bare stone.
 
