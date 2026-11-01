@@ -30,7 +30,7 @@ Most runs end up above the fuse box, in their own separate area, at the main swi
 
 I kept it simple: one network, straight off the Ziggo router, with TP-Link Omada switches and access points.
 
-About that Ziggo router. They used to be with a smaller ISP, where I was on first-name basis with the guy who ran it. Then someone talked the owner into switching to Ziggo. I told him not to. He did it anyway, and yes, he regrets it. So much for "he listens".
+About that Ziggo router. They used to be with a smaller ISP, where I was on first-name basis with the guy who ran it. Then someone talked the owner into switching to Ziggo. I told him not to. He did it anyway, and yes, he regrets it. He listens. Mostly.
 
 Customers get Wi-Fi too, on their own SSID but the same flat network. The card machines don't touch it at all: they all run on 4G. And unlike [the sandwich shop's guest Wi-Fi](/2026/11/linksys-on-a-zip-tie/), I set it up properly this time: the customer SSID is marked as a guest network in Omada, so customers can't see each other's devices or reach anything on the shop's network, like the registers or the cameras.
 
