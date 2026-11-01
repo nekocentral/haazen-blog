@@ -9,7 +9,7 @@ The sandwich shop at my local train station has my old Linksys router hanging fr
 
 They wanted guest Wi-Fi they could switch off in the evening. So I flashed my old Linksys with Tomato, set a schedule, and zip-tied it to the wall.
 
-About half a year later their KPN modem died, taking the debit card machine and the phone with it. I dropped off a Stonesoft FW-315 firewall and an ATA from my own spare kit to bridge the gap. A week or two later KPN sent a new modem and my gear went home. The Linksys stayed.
+About half a year later their KPN modem died, taking the debit card machine and the phone with it. I dropped off a Stonesoft FW-315 firewall and an ATA from my own spare kit to bridge the gap. (Why do I own an enterprise firewall? Dumpster dive at my employer at the time, with approval. I had the rack-mount versions too and ran those at home for a while, until I nuked the 10G card by hot-swapping it.) A week or two later KPN sent a new modem and my gear went home. The Linksys stayed.
 
 ![The setup in 2021: the Linksys hanging top right, my temporary Stonesoft firewall on the shelf](TODO-cloudinary-url-of-the-2021-photo)
 
@@ -41,4 +41,8 @@ NAT on its own only blocks one direction, though: guests could still reach out t
 
 ## Six years later
 
-It's had no firmware updates since it went up. TODO: what you find when you log in again (if the password still works).
+It's had no firmware updates since it went up. Six years without updates isn't exactly best practice, which is one more reason the guests are walled off from everything else.
+
+TODO: what you find when you log in again (if the password still works).
+
+And it has never gone down. Not once. That bitch won't die. The owner knows it's mine, and the plan is simple: it stays until it dies. At this rate, that'll be when I retire.
