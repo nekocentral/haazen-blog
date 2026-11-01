@@ -22,11 +22,11 @@ They kept dropping off the Wi-Fi. And when they were connected, the app often ju
 
 ## Round two: Dahua
 
-This time he did listen. The shop now has four Dahua cameras, with a fifth one planned for the staff side, covering the windows. Those are covered in full-height stickers, so it can't see outside, and the staff all know about the cameras. All of them are wired with PoE straight from a Dahua NVR. No more Wi-Fi to drop off.
+This time he did listen. The shop now has four Dahua cameras, with a fifth one planned. The staff all know about the cameras. All of them are wired with PoE straight from a Dahua NVR. No more Wi-Fi to drop off.
 
 ![Three of the four Dahua domes, sharing one plate on the ceiling](https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/dahua-cameras.webp)
 
-The NVR lives in the ceiling, out of sight and out of reach, with 4 TB of storage. Heat hasn't been an issue up there.
+The NVR is tucked away out of sight, with 4 TB of storage.
 
 Getting the cables there was the worst part. Four Cat5e cables through a single normal conduit meant for one or two. It took my mate and me an hour or two of pulling, pushing and swearing. Apparently every project of mine involves forcing too many cables through too small a hole (see also: [the EV charger](/2026/11/ev-charger-build/)).
 
