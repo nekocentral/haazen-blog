@@ -1,5 +1,6 @@
 ---
 title: How I became the kebab shop's IT guy
+date: 2026-11-01 15:42:00 +0000
 series: Kebab shop
 series_parts: 7   # planned; the box shows 'Part X of 7' until they're all out
 series_label: Prologue

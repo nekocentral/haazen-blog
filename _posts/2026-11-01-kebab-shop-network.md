@@ -1,6 +1,7 @@
 ---
 title: Wiring a kebab shop from bare stone
 excerpt: "When I got to the new location, there was absolutely nothing. The owner had stripped the place down to the bare stone."
+date: 2026-11-01 15:47:00 +0000
 series: Kebab shop
 series_parts: 7   # planned; the box shows 'Part X of 7' until they're all out
 tags: [local-shops, networking]
