@@ -88,7 +88,7 @@ Recently someone from Exexis was over, and while we were chatting I asked him to
 | RFID reader | €29 |
 | **Total** | **€387** |
 
-Plus cable and small bits. Back then a brand new charger was €500 and up, and I know exactly what's inside mine.
+The cable for the rewire I got for free from someone I know, so that's just a few small bits on top. Back then a brand new charger was €500 and up, and I know exactly what's inside mine.
 
 ## Where it's at now
 
