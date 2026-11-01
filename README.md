@@ -26,7 +26,7 @@ bundle exec jekyll serve --drafts
 
 Then open http://localhost:4000.
 
-Add `image: /images/whatever.jpg` (or a full https:// URL) to a post's front matter. It shows on the blog list and at the top of the post. Posts without one use `default_image` from `_config.yml`.
+Add `image: /images/whatever.jpg` (or a full https:// URL) to a post's front matter. It shows on the blog list and at the top of the post. Posts without one use `default_image` from `_config.yml`. Add `header_image: false` to use the image on the list only, without repeating it at the top of the post.
 
 ## Credits
 

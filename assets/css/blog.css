@@ -25,3 +25,12 @@ ul.pagination .button.disabled { opacity: 0.25; pointer-events: none; }
 .post-content pre { overflow-x: auto; }
 
 .post-nav { flex-wrap: wrap; }
+
+/* Keep tall phone photos from taking over the page */
+.post-content img, #main .image.main img {
+	display: block;
+	max-height: 70vh;
+	width: auto;
+	max-width: 100%;
+	margin: 0 auto 2em auto;
+}
