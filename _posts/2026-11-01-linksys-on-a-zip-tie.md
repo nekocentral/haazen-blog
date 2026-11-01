@@ -1,6 +1,9 @@
 ---
 title: My router has been hanging from a zip tie for six years
 date: 2026-11-01 14:13:00 +0000
+excerpt: "> **Note:** I set this up around 2020, long before I started using Claude, so the build was all me. Claude helped me write this post, and sat with me while I re-checked the settings for it.
+
+The sandwich shop at my local train station has my old Linksys router hanging from a zip tie. I put it there around 2020, and it's still there."
 series: Sandwich shop
 tags: [local-shops, networking, tomato, wifi]
 image: https://res.cloudinary.com/haazen/image/upload/Sandwich%20Shop/router-now.webp
