@@ -17,7 +17,7 @@ About half a year later their KPN modem died, taking the debit card machine and 
 
 The router is a Linksys E3200 from the Cisco era: a 500 MHz Broadcom chip and 16 MB of flash. It runs AdvancedTomato, a nicer-looking interface on top of Shibby's Tomato build. An Access Restriction rule in Tomato switches the Wi-Fi off every day from 8 PM to 5:30 AM, without anyone having to remember. The rule is called "Gesloten", Dutch for "closed". It's an open network, no password. Not that many people use it, I think, but it's there.
 
-TODO: rate limit. If there is one, what's it set to?
+There's a bandwidth limit too: all guests together share at most 10 Mbit/s down and 1.2 Mbit/s up, at low priority. Enough for checking your phone over a sandwich, not enough to slow the shop down. DHCP leases are just 10 minutes, since nobody stays long.
 
 ## The captive portal that never was
 
