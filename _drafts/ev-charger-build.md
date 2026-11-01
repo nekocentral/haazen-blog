@@ -23,7 +23,7 @@ Lucky that's all it did. So yeah: time to upgrade to something proper.
 
 ## A €50 EVBox
 
-Instead of buying a new wallbox, I found a second-hand EVBox on Marktplaats for €50. It came from an old ING office, which is why it's bright ING orange. (Still need to paint that thing.)
+Instead of buying a new wallbox, I found a second-hand EVBox on Marktplaats for €50, back at the end of January 2023. It came from an old ING office, which is why it's bright ING orange. (Still need to paint that thing.)
 
 <!-- TODO: photo of the EVBox -->
 
@@ -35,6 +35,9 @@ Opening it up, there wasn't much to it:
 - a small kWh meter
 - a mains switch
 - a contactor
+- a 12 V power supply
+
+![The EVBox opened up, with the original black-box controller on top](/images/ev-charger/evbox-opened.webp)
 
 The basic hardware was fine. The part that made it an EVBox was the controller, so that's what had to go.
 
